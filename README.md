@@ -45,3 +45,4 @@ To view the project locally:
 
 ## Author
 Created by **Yousef Khalil Ibrahim**, who developed and authored all content summaries featured on this site."# PersonalPlog" 
+"# PersonalPlog" 

@@ -1,0 +1,130 @@
+ /* Blog Post CSS */
+.btnhome {
+    padding: 10px 20px;
+    margin-top: 5px;
+    background-color: #fff;
+    color: #da5a05;
+    display: inline-block;
+    text-decoration: underline;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btnhome:hover {
+    background-color: #da5a05;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.post h1,
+.post h2,
+.post h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+.post h1 {
+    line-height: 1em;
+    font-size: 2em;
+}
+
+.post h2 {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.post h3 {
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+.post p {
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.avatar {
+    align-self: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+}
+
+img {
+    width: 60%;
+    height: auto;
+    align-self: center;
+    padding-top: 20px;
+}
+
+.image figcaption {
+    font-style: italic;
+    align-self: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100vw; 
+    margin: 0; 
+    box-sizing: border-box; 
+}
+
+/* Sidebar styling */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 300px;
+    flex-grow: 1;
+    align-self: flex-start;
+}
+
+.author-info {
+    font-size: 1.1em;
+    padding: 10px;
+    text-align: justify;
+}
+
+/* Blog Post Content */
+.post {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Ensuring content inside sidebar is fully visible */
+.sidebar > div {
+    margin-bottom: 20px;
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .post, .sidebar {
+        width: 100%;
+        max-width: none;
+    }
+}
