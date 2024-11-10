@@ -1,15 +1,13 @@
- /* Blog Post CSS */
+ /* Blog Post CSS */ 
 .btnhome {
     padding: 10px 20px;
     margin-top: 5px;
     background-color: #fff;
     color: #da5a05;
     display: inline-block;
-    text-decoration: underline;
     border-radius: 5px;
     border: none;
     font-size: 16px;
-    font-weight: bolder;
     cursor: pointer;
     text-align: center;
 }
@@ -34,12 +32,10 @@
 
 .post h2 {
     font-size: 1.5em;
-    font-style: italic;
 }
 
 .post h3 {
     font-size: 1.3em;
-    font-style: italic;
 }
 
 .post p {
@@ -69,9 +65,19 @@ img {
 }
 
 .image figcaption {
-    font-style: italic;
     align-self: center;
     text-align: center;
+}
+
+blockquote {
+    font-family: 'Georgia', serif; 
+    color: #2c3e50; 
+    border-left: 6px solid #3498db; 
+    background-color: #ecf0f1; 
+    padding: 15px 25px; 
+    margin: 20px 0;
+    border-radius: 8px; 
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .container {
@@ -117,6 +123,21 @@ img {
     margin-bottom: 20px;
 }
 
+pre {
+    white-space: pre-wrap;        
+    word-wrap: break-word;        
+    max-height: 300px;            
+    overflow-y: auto;              
+    padding: 15px;
+    background-color: #2d2d2d;
+    color: #fff;
+    border-radius: 5px;
+    display: block;
+    width: 100%;                  
+    font-family: "Courier New", Courier, monospace; 
+    white-space: pre-line;      
+}
+
 /* Responsive Design for smaller screens */
 @media screen and (max-width: 768px) {
     .container {
@@ -127,4 +148,11 @@ img {
         width: 100%;
         max-width: none;
     }
+
+    .sidebar {
+        order: -1;  
+    }
 }
+
+
+
